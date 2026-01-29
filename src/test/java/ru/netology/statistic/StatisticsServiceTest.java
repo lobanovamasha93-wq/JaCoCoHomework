@@ -20,12 +20,13 @@ public class StatisticsServiceTest {
 
     @Test
     void findMax_MaxValueNotAtStart() {
-    StatisticsService service = new StatisticsService();
+        StatisticsService service = new StatisticsService();
+
         long[] incomes = {5, 3, 8, 2, 1}; // максимум (8) не в начале
         long expected = 8;
 
         long actual = service.findMax(incomes);
 
         Assertions.assertEquals(expected, actual);
-}
+    }
 }
